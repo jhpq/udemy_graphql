@@ -1,0 +1,22 @@
+type Query {
+    jobs: [Job!],
+    job(id: ID!): Job
+}
+"""
+
+WOW que chido
+"""
+type Job {
+    id: ID!
+    """This _is_ a documentation comment"""
+    date: String!
+    title: String
+    description: String
+    company: Company!
+}
+
+type Company {
+    id: ID!
+    name: String
+    description: String
+}
